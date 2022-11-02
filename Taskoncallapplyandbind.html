@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //first 
+        // task Write a function and use 'call' to call the function
+
+        // const person = {
+        //     fullName: function () {
+        //         return this.firstName + " " + this.lastName;
+        //     }
+        // }
+        // const person1 = {
+        //     firstName: "Hello",
+        //     lastName: "Mir"
+        // }
+        // const person2 = {
+        //     firstName: "Mir",
+        //     lastName: "aaqib"
+        // }
+        // console.log(person.fullName.call(person1));
+
+        // //second task
+        // // Write a program using apply
+
+        // const persons = {
+        //     fullName: function () {
+        //         return this.firstName + " " + this.lastName;
+        //     }
+        // }
+        // const person_one = {
+        //     firstName: "Hello",
+        //     lastName: "Mir"
+        // }
+        // const person_two = {
+        //     firstName: "Mir",
+        //     lastName: "aaqib"
+        // }
+        // console.log(persons.fullName.apply(person_one));
+
+        // //Third task
+        // // Write a program using bind
+        // let runner = {
+        //     name: 'Runner',
+        //     run: function (speed) {
+        //         console.log(this.name + ' runs at ' + speed + ' mph.');
+        //     }
+        // };
+        // let flyer = {
+        //     name: 'Flyer',
+        //     fly: function (speed) {
+        //         console.log(this.name + ' flies at ' + speed + ' mph.');
+        //     }
+        // };
+        // let run = runner.run.bind(flyer, 20);
+        // run();
+
+
+        //Last one
+        // Create a new object called Student with age 20
+        // , write a function which prints the age of the student from the student object.
+
+        const student={
+            age:20,
+            prints:function(){
+                console.log(`${this.age}`)
+            }
+        }
+       
+        let fin=student.prints.bind(student);
+        fin();
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
